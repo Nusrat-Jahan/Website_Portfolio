@@ -135,7 +135,8 @@ opacity: 0.9;
 /* ------------ Index page- profile(body) css end --------------- */
 
 /* ------------ About page- about me description start --------------- */
-main {
+main,
+.middle {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -321,6 +322,7 @@ margin-left: 50px;
   }
 
   .grid__item {
+    font-family: 'Roboto Condensed', sans-serif;
     background-color: lightgray;
     width: auto;
     min-height: auto;
