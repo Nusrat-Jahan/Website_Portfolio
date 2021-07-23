@@ -1,59 +1,370 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <title>Nusrat Jahan - Portfolio</title>
-    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/Portfolio"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
-    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+  <meta charset="utf-8">
+  <title>Responsive Navigation Menu</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.production.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Permanent+Marker&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
-  <header class="page-header">
-      <img src="img/portfolio-circle.png" alt="logo" class="page-header__item">
-      <nav class="main-navigation page-header__item">
-        <ul role="menubar" class="navigation-list">
-          <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
-         </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-  </header>
-  <div class="profile">
-      <div class="body_left_part">
-        <img class="profile__portrait" src="img/portfolio1.jpg" alt="Nusrat portrait picture">
-       <!-- <img src="img/portfolio.jpg" style= "border-radius:50%"; "width:30px"; "height:20px"> -->
+  <div class="conatiner">
+    <nav>
+      <div class="logo">
+        <p>Nusrat-Jahan</p>
       </div>
-      <div>
-        <h1>Hello World</h1>
-        <p>My name is Nusrat Jahan</p>
-        <p>I am <span id="body_right_part--span">&lt;web&gt;</span> developer from Munich</p>
-        <a id="Sample_code" class="button" href="https://github.com/Nusrat-Jahan/Website_Portfolio" target="_blank">Check out some of my code</a>
-      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#download">Download CV</a></li>
+      </ul>
+    </nav>
   </div>
-  <footer class="page_footer">
-      <p>Find me on</p>
-      <div class="social-media">
-        <a href="https://github.com/" target="_blank"><img src="img/git_icon.svg" alt="github"  class="github"></a>
-        <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/Twitter2.svg" alt="twitter" class="twitter"></a>
-        <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin_2.svg" alt="linkedln" class="linkedin"></a>
+
+  <!-- Home section start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Hello,</div>
+        <div class="text-two">I'm Nusrat Jahan</div>
+        <div class="text-three">Full-Stack Web Developer</div>
+        <div class="text-four">From Munich</div>
       </div>
+    </div>
+  </section>
+
+  <!-- About section start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Me</span></div>
+      <div class="about-details">
+        <div class="right">
+          <img src="img/portfolio1.jpg">
+        </div>
+        <div class="left">
+          <div class="topic">
+            Hi, I'm Nusrat.
+          </div>
+          <p> I am from Bangladesh and currently living in Germany. I have completed my BSC
+            in computer science and engineering in 2017. I have a very little knowledge in HTML and CSS and no
+            knowledge
+            in JavaScript, node.js etc. I have recently started Full-stack web development course at CareerFoundry.
+            I am from Bangladesh and currently living in Germany. I have completed my BSC
+            in computer science and engineering in 2017. I have a very little knowledge in HTML and CSS and no
+            knowledge
+            in JavaScript, node.js etc. I have recently started Full-stack web development course at CareerFoundry.
+          </p>
+          <!-- <div class="button"> -->
+          <!-- <button target="blank"><a href="/files/Nusrat_Jahan_CV_2020.pdf"></a>Download my CV here!</button> -->
+          <a href="files/Nusrat_Jahan_CV_2020.pdf" target="_blank" id="download" class="btn btn-outline-primary"
+            download="Nusrat_Jahan_CV"> Download my CV </a>
+          <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- work section start here -->
+
+
+  <section class="work" id="work">
+    <div class="container text-center">
+      <div class="content">
+        <div class="title"><span>Work</span></div>
+      </div>
+      <div class="control">
+        <ul>
+          <li class="button" data-filter="All">All</li>
+          <li class="button" data-filter="React">React</li>
+          <li class="button" data-filter="React Native">React Native</li>
+          <li class="button" data-filter="Angular">Angular</li>
+          <li class="button" data-filter="JavaScript">JavaScript</li>
+        </ul>
+      </div>
+      <div class="row pt-3">
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>Chat-App</h2>
+              <p>
+                Chat app is designed for mobile devices built with React Native and Expo, chat interface styled with the
+                gifted-chat library, and stores data with Google's Firebase.
+              </p>
+              <p>Technologies used: React Native, Gifted-Chat, Firebase</p>
+            </div>
+            <div class="item">
+              <img src="img/Chat-App-start-interface-resizes.jpeg" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal"></i></span>
+            </div>
+            <a href="https://github.com/Nusrat-Jahan/Chat-App" target="blank">See project on
+              GitHub</a></br>
+            <a href="https://github.com/Nusrat-Jahan/Chat-App" target="blank" class="hosted-project">See hosted
+              project</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>PokeDex App </h2>
+              <p>
+                This Pokedex web application is using asynchronous operation via fetch and promises to retrieve data
+                from
+                an external API and enables viewing the data through buttons and a modal.
+              </p>
+              <p>Technologies used: HTML, CSS, Bootstrap Framework, JavaScript, External PokeDex API</p>
+            </div>
+            <div class="item">
+              <img src="img/pokedex-app-resized.PNG" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal1"></i></span>
+            </div>
+            <a href="https://github.com/Nusrat-Jahan/Pokedex-app" target="_blank">See project on
+              GitHub</a></br>
+            <a href="https://nusrat-jahan.github.io/Pokedex-app/" target="_blank" class="hosted-project">See hosted
+              project</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>myFlix API</h2>
+              <p>
+                This project is a REST API for myFlix-client that interacts with a database that store data about
+                different movies.
+              </p>
+              <p>Technologies used: Node.js, Express, mongoDB, middleware modules, Heroku App hosting, JWT
+                authentication
+              </p>
+            </div>
+
+            <div class="item">
+              <img src="img/myFlix-api.jpg" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal2"></i></span>
+            </div>
+
+            <a href="https://github.com/Nusrat-Jahan/movie_api" target="_blank">See project on GitHub</a></br>
+            <a href="https://github.com/Nusrat-Jahan/movie_api" target="_blank" class="hosted-project">See hosted
+              project</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row pt-3">
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>myFlix-client</h2>
+              <!-- <img src="img/MyFlix.PNG" alt="logo" class="page-header__item"> -->
+              <p>
+                This project is a React application that allows users to sign up, log in and get information about
+                movies, genres, and directors. It also allows user to update their account information. This application
+                uses an existing server-side REST API and MongoDB database.
+              </p>
+              <p>Technologies used: React, Bootstrap, Redux, axios, API integration</p>
+            </div>
+            <div class="item">
+              <img src="img/myFlix-client-resizes.png" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal3"></i></span>
+            </div>
+            <a href="https://github.com/Nusrat-Jahan/myFlix-client" target="_blank" class="github-code">See project on
+              github</a></br>
+            <a href="https://myflix-movie-app.netlify.app/" target="_blank" class="hosted-project">See hosted
+              project</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>Meet App</h2>
+              <p>
+                This is a serverless, progressive web application (PWA) with React using a test-driven development (TDD)
+                technique. This application uses the Google Calendar API to fetch upcoming events.
+              </p>
+              <p>Technologies used: React, TDD technique, Google OAuth2 authentication, AWS lambda function, OOP, React
+                axios and async/await, Testing using Jest and Enzyme
+              </p>
+            </div>
+            <div class="item">
+              <img src="img/meet-app-resized.PNG" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal4"></i></span>
+            </div>
+            <a href="https://github.com/Nusrat-Jahan/meet" target="_blank">See project on
+              github</a></br>
+            <a href="https://nusrat-jahan.github.io/meet/" target="_blank" class="hosted-project">See hosted project</a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="item-body border">
+            <div class="item-header">
+              <h2>myFlix-Angular-client</h2>
+              <!-- <img src="img/MyFlix.PNG" alt="logo" class="page-header__item"> -->
+              <p>
+                This project is a Angular application that allows users to sign up, log in and get information about
+                movies, genres, and directors. It also allows user to update their account information. This application
+                uses an existing server-side REST API and MongoDB database.
+              </p>
+              <p>Technologies used: Angular, angular material, API integration</p>
+            </div>
+            <div class="item">
+              <img src="img/myFlix-angular-demo-pic-resizes.PNG" class="img-fluid" alt="">
+              <span><i class="fas fa-plus" data-toggle="modal" data-target="#portfoliomodal5"></i></span>
+            </div>
+            <a href="https://github.com/Nusrat-Jahan/myFlix-Angular-client" target="_blank">See project on
+              GitHub</a></br>
+            <a href="https://nusrat-jahan.github.io/myFlix-Angular-client/welcome" target="_blank"
+              class="hosted-project">See hosted
+              project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- </div>
+
+    </div> -->
+  </section>
+
+  <div class="portfolio-modal modal mt-5 " id="portfoliomodal" aria-hidden="true" tabindex="-1" role="dialog">
+    <div class=" modal-dialog modal-md" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid py-3 px-6">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/Chat-App-start-interface.jpeg" class="img-fluid rounded" alt=""
+                style="height:auto; max-width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal mt-5 " id="portfoliomodal1" aria-hidden="true" tabindex="-1" role="dialog">
+    <div class=" modal-dialog modal-md" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid py-3 px-6">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/pokedex-app-modal.PNG" class="img-fluid rounded" alt=""
+                style="height:auto; max-width: 100%;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal " id="portfoliomodal2" aria-hidden="true" role="dialog">
+    <div class="modal-md modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/myFlix-angular-demo-pic.PNG" alt="" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="portfolio-modal modal " id="portfoliomodal3" aria-hidden="true" role="dialog">
+    <div class="modal-md modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/myFlix-client.png" alt="" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal " id="portfoliomodal4" aria-hidden="true" role="dialog">
+    <div class="modal-md modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/meet-app.PNG" alt="" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="portfolio-modal modal " id="portfoliomodal5" aria-hidden="true" role="dialog">
+    <div class="modal-md modal-dialog-centered" role="document">
+      <div class="modal-content text-center">
+        <div class="modal-body text-center">
+          <div class="conatiner-fluid">
+            <button type="button" class="btn-close btn btn-success" aria-label="Close" data-dismiss="modal"
+              style="justify-content: right;">Close
+            </button>
+            <div class="row justify-content-center">
+              <img src="img/myFlix-angular-demo-pic.PNG" alt="" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page_footer">
+    <p>Find me on</p>
+    <div class="social-media">
+      <a href="https://github.com/" target="_blank"><img src="img/git_icon.svg" alt="github" class="github"></a>
+      <a href="https://twitter.com/?lang=en" target="_blank"><img src="img/Twitter2.svg" alt="twitter"
+          class="twitter"></a>
+      <a href="https://www.linkedin.com/" target="_blank"><img src="img/linkedin_2.svg" alt="linkedln"
+          class="linkedin"></a>
+    </div>
   </footer>
-  <script src="js/tota11y.min.js"></script>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
