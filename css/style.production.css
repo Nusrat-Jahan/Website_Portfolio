@@ -34,15 +34,24 @@ nav{
   -webkit-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
   transition: all 0.4s ease;
+  z-index:1;
 }
 nav.sticky{
   padding: 13px;
   background: #617FA2;
   padding: 0 50px 0 65px;
 }
-.logo p{
-  font-family: 'Permanent Marker', cursive;
+.logo a{
+  /* font-family: 'Permanent Marker', cursive; */
   /* font-family: 'Abril Fatface', cursive; */
+  text-decoration: none;
+  color: white;
+  transition: transform 250ms, opacity 400ms;
+  font-family: system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;;
+}
+.logo a:hover{
+  transform: scale(1.2);
+  opacity: 0.8;
 }
 nav.sticky .logo p{
  color:black;
@@ -64,6 +73,8 @@ nav ul li{
   margin: 0 5px;
 }
 nav ul li a{
+  /* font-family: Raleway; */
+  /* font-weight: 500; */
   color: #f2f2f2;
   text-decoration: none;
   font-size: 18px;
@@ -224,8 +235,8 @@ border-radius: 12px;
   }
   .about-details .left a{
     color: brown;
-    position: relative;
-    z-index:9999999;
+    /* position: relative;
+    z-index:9999999; */
     display: block;
     scroll-margin-top: 90px;
   }
@@ -239,8 +250,6 @@ border-radius: 12px;
   .work .content{
     width: 90%;
     margin: 40px auto;
-    position: relative;
-    z-index: -1;
   }
   .work .title{
     display: -webkit-box;
@@ -300,8 +309,8 @@ display: flex;
 .item-header{
   height: 315px;
   margin-top: 29px;
-  position: relative;
-  z-index: -1;
+  /* position: relative;
+  z-index: -1; */
 }
 
 .item-header h2{
@@ -350,10 +359,10 @@ display: flex;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
-.item img{
+/* .item img{
   position: relative;
   z-index: -1;
-}
+} */
 
 .hosted-project{
  color:brown;
@@ -389,15 +398,12 @@ display: flex;
     margin-bottom: 20px;
     margin-top: 34px;
   }
-  
-  .social-media img {
-    width: 40px;
-    height: 40px;
+  .page_footer p{
+    font-size: 22px;
   }
-  
-  .github {
-    background-color: #52a2f3;
-    border-radius: 50%;
+  .social-media i {
+    font-size: 30px;
+    padding: 3px;
   }
 
 
@@ -472,7 +478,6 @@ display: flex;
     background: none;
     color: cyan;
   }
-
   .about .about-details{
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
