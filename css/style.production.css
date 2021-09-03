@@ -407,13 +407,43 @@ display: flex;
   }
 
 
-
+label, input, textarea{
+  display: block;
+}
   
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
 
+input, textarea{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-
-
-
+.submit {
+  width: 100%;
+  background-color: #617FA2;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 
   @media (max-width: 1170px){
@@ -529,6 +559,9 @@ display: flex;
   .item-header{
     height: 250px;
   }
+  .page_footer .social-media{
+    margin-top: 2%;
+  }
 }
 @media (max-width: 465px){
   .home .text .text-two{
@@ -539,5 +572,8 @@ display: flex;
   }
   .item-header{
     height: 250px;
+  }
+  .page_footer .social-media{
+    margin-top: 2%;
   }
 }

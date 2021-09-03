@@ -10,3 +10,18 @@ window.onscroll = function () {
   }
 }
 $(".modal-backdrop").remove();
+
+// $(document).ready(function () {
+//   $('.submit').click(function (event) {
+//     event.preventDefault()
+//     console.log('button clicked')
+
+//     var email = $('.email').val()
+//     if (email.length > 5 && email.includes('.') && email.includes('@')) {
+//       alert('Email is valid')
+//     }
+//     else {
+//       alert('Email is not valid')
+//     }
+//   })
+// })
